@@ -1,2 +1,4 @@
 # hello-world
-Just a test 
+Hi Humans!!
+
+This is just a test to use GitHub.
