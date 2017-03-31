@@ -1,2 +1,5 @@
-# JCstore design
-This is project for JCstore
+# hello-world
+Hi Humans!!
+
+This is just a test to use GitHub.
+Another test on GitHub.
