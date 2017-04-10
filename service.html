@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.8, maximum-scale=2.0, user-scalable=no">
-	<title>服務項目</title>
+	<title>主要代購</title>
 	<script src="jquery/jquery-3.2.0.min.js"></script>
-	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>	
 	<link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootswatch.min.css"/>
 	<style>
 		.navbar{
@@ -32,6 +32,60 @@
 		.container .col-md-12 h1{
 			color: #ddd;
 		}
+		.jumbotron{
+			margin-bottom: 0;
+		}
+		#item1{
+			background: #ddd;			
+			position: relative;
+			overflow: hidden;
+		}
+		#item2{
+			background: #bbb;
+			position: relative;
+			overflow: hidden;			
+		}
+		#item3{
+			background: #999;	
+			position: relative;
+			overflow: hidden;			
+		}
+		#item4{
+			background: #888;				
+			color: #fff;		
+			position: relative;
+			overflow: hidden;	
+		}		
+		#item1 h3, #item2 h3, #item3 h3, #item4 h3{
+			font-weight: bolder;
+			
+		}
+		#item3 h3, #item4 h3{
+			color: #eee;
+		}
+		#content1,#content3{
+			position: absolute;
+			right: -25%;
+			top: 10%;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		#content2,#content4{
+			position: absolute;
+			left: -25%;
+			top: 10%;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		#content2{
+			color: #777;
+		}
+		#content3{
+			color: #ddd;
+		}
+		#content4{
+			color: #eee;
+		}
 	</style>
 
 </head>
@@ -55,7 +109,7 @@
 			        <li class="active"><a href="index.html">首頁 <span class="glyphicon glyphicon-home"></span><span class="sr-only">(current)</span></a></li>
 			        <li><a href="company.html" target="_self">公司沿革</a></li>
 			        <li><a href="buy.html" target="_self">訂購須知</a></li>
-			        <li><a href="service.html" target="_self">服務項目</a></li>
+			        <li><a href="service.html" target="_self">主要代購</a></li>
 			        <!--<li><a href="partner.html" target="_self">合作夥伴</a></li>-->		        
 			      </ul>		      
 			      <ul class="nav navbar-nav navbar-right">
@@ -69,10 +123,49 @@
 	<div class="container">	
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<h1>服務項目</h1>						
+						<h1>主要代購</h1>						
 					</div>
-				</div>			
+				</div>
+				<div class="row text-center" id="serviceContent">
+					<div class="jumbotron" id="item1">
+						<h3>汽車商品</h3>
+						<p id="content1">
+							汽車零組件<br/>
+							零件車拆售<br/>
+							整車出售<br/>
+							其他車類商品<br/>							
+						</p>
+					</div>
+					<div class="jumbotron" id="item2">
+						<p id="content2">
+							戶外傢俱<br/>
+							攜行式寢具<br/>
+							烤肉用品<br/>
+							照明設備<br/>							
+						</p>
+						<h3>露營用品</h3>
+					</div>
+					<div class="jumbotron" id="item3">
+						<h3>日常用品</h3>
+						<p id="content3">
+							沐浴用品<br/>
+							廚房用品<br/>
+							日本服飾<br/>
+							日本零食<br/>							
+						</p>
+					</div>
+					<div class="jumbotron" id="item4">
+						<h3>其他商品</h3>
+						<p id="content4">
+							觀景盆栽<br/>
+							釣魚用品<br/>
+							日本陶瓷<br/>
+							日本茶具<br/>							
+						</p>
+					</div>					
+				</div>
 	</div>
 	<div class="footer text-center">&copy; 2017 JCstore 正昌日本外匯 版權所有</div>
+	<script src="js/hover.js"></script>
 </body>
 </html>
